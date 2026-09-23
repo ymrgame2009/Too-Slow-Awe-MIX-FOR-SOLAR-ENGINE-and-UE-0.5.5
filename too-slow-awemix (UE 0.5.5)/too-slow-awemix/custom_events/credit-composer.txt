@@ -1,8 +1,0 @@
-Bluebird's Credit system
-[composer]
-
-<Value1 : Name>
-Put composer name here
-
-<Value2 : ID>
-put number of NAME ID here

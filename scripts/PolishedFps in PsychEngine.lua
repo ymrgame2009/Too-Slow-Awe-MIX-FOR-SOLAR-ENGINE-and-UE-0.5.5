@@ -4,8 +4,12 @@
 
 --Works on Psych Engine, but works on 0.6.3, 0.7x, 1.0 Pre-Release and 1.0
 --Recreation made by Sonic356
+
+
 function onCreate()
-makeLuaText("memoryUsed", "0 MB", 0, 90, 24)
+    local ueVer = getPropertyFromClass("MainMenuState", "ueVersion")
+    local psychVer = getPropertyFromClass("MainMenuState", "psychEngineVersion")
+    makeLuaText("memoryUsed", "0 MB", 0, 90, 24)
     setTextSize("memoryUsed", 14)
     setTextBorder('memoryUsed', 2, 'black')
     addLuaText("memoryUsed")
@@ -28,7 +32,9 @@ makeLuaText("memoryUsed", "0 MB", 0, 90, 24)
     addLuaText("FPStext")
     setObjectCamera('FPStext', 'other')
 
-    makeLuaText('engineUsed', 'Universe Engine 0.5.5 | Psych Engine 0.6.3 ', 0, 0, 40)
+    local engine = "Universe"
+    if (ueVer >= "0.6.0") then engine = "Solar" end
+    makeLuaText('engineUsed', engine..' Engine '..ueVer..' | Psych Engine '..psychVer, 0, 0, 40)
     setTextSize('engineUsed', 14)
     setTextBorder('engineUsed', 2, 'black')
     addLuaText('engineUsed')

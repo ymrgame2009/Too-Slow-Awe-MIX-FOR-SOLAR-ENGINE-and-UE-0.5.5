@@ -1,7 +1,0 @@
-{
-	"name": "too-slow-awemix",
-	"description": "Now with MODCHART!",
-	"runsGlobally": true,
-	"restart":true,
-	"color": [255, 255, 255]
-}

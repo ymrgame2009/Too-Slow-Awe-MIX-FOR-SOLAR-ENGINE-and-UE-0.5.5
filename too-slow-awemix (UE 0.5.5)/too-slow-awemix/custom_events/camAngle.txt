@@ -1,9 +1,0 @@
-Made by Paper Face#4233
-
-<Value1 : angle>
--360 ~ 360
-Actually, there's no limit
-
-<Value2 : time>
-0~99999
-if you blank this value, it will be applied immediately
